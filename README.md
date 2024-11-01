@@ -22,7 +22,7 @@ To run UIPremierTV locally, follow these steps:
 
 	1.	Clone the repository:
 
-git clone 
+git clone https://github.com/MstarClint/ui-premier-tv
 
 
 	2.	Install dependencies:

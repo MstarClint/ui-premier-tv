@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Premier TV - Favorites</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img src="https://i.ibb.co/7VSCXxK/Logo-UI-Premier-TV.png" alt="UI Premier TV Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="favorites.html">Favorites</a></li>
+                <li><a href="#">Upload</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Favorites Section -->
+    <section class="favorites-page">
+        <div class="favorites-container">
+            <h1>Your Favorite Videos</h1>
+
+            <!-- No Favorites Message -->
+            <div id="no-favorites" class="hidden">
+                <p>You haven’t added any videos to your favorites yet!</p>
+            </div>
+
+            <!-- Favorites Grid -->
+            <div id="favorites-grid">
+                <!-- Dummy favorite videos (this will be dynamically generated) -->
+                <div class="video-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Video Thumbnail">
+                    <h3>Favorite Video Title 1</h3>
+                </div>
+                <div class="video-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Video Thumbnail">
+                    <h3>Favorite Video Title 2</h3>
+                </div>
+                <!-- More video cards can be added here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 UI Premier TV. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <!-- Script for showing/hiding favorites -->
+    <script>
+        const favoritesGrid = document.getElementById('favorites-grid');
+        const noFavoritesMessage = document.getElementById('no-favorites');
+
+        // Dummy logic to display "no favorites" message if grid is empty
+        if (favoritesGrid.children.length === 0) {
+            noFavoritesMessage.classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>

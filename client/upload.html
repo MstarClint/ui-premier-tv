@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Premier TV - Upload</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img src="https://i.ibb.co/7VSCXxK/Logo-UI-Premier-TV.png" alt="UI Premier TV Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="favorites.html">Favorites</a></li>
+                <li><a href="upload.html">Upload</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Upload Section -->
+    <section class="upload-page">
+        <div class="upload-container">
+            <h1>Upload Your Video</h1>
+
+            <form class="upload-form" action="#" method="POST" enctype="multipart/form-data">
+                <!-- File Input -->
+                <label for="video-upload">Select Video:</label>
+                <input type="file" id="video-upload" name="video-upload" accept="video/*" required>
+
+                <!-- Title Input -->
+                <label for="video-title">Video Title:</label>
+                <input type="text" id="video-title" name="video-title" placeholder="Enter video title" required>
+
+                <!-- Description Input -->
+                <label for="video-description">Video Description:</label>
+                <textarea id="video-description" name="video-description" rows="4" placeholder="Write a short description" required></textarea>
+
+                <!-- Category Dropdown -->
+                <label for="video-category">Category:</label>
+                <select id="video-category" name="video-category" required>
+                    <option value="" disabled selected>Select a category</option>
+                    <option value="Most Popular">Most Popular</option>
+                    <option value="Campus News">Campus News</option>
+                    <option value="Lecture Videos">Lecture Videos</option>
+                    <option value="Sports">Sports</option>
+                </select>
+
+                <!-- Submit Button -->
+                <button type="submit" class="upload-btn">Upload Video</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 UI Premier TV. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
